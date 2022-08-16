@@ -15,7 +15,7 @@ const PostSchema = new mongoose.Schema({
         // default : "No photo"
     },
     postedBy : {
-        type : mongoose.ObjectId ,
+        type : mongoose.ObjectId,
         ref : "User"
     }
 })

@@ -5,8 +5,6 @@ const bcrypt  = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const ProtectRoute = require("../middlewares/protectedRoute");
 
-
-
 router.post('/signin', (req, res, next)=>{    
     const {email, password} = req.body;
     if(!email || !password){
